@@ -29,6 +29,7 @@ rule("ifacegenerator")
     on_load(function(target)
       print(">> rule ifacegenerator:on_load target=" .. target:name())
       target:set("targetdir", "build/gen-output/" .. target:name())
+      target:set('policy', 'build.fence', true)
     end)
 
     on_build_file(function (target, sourcefile, opt)
