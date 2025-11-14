@@ -1,0 +1,11 @@
+#pragma once
+
+namespace someinterface
+{
+    struct SomeStruct
+    {
+      int i;
+      int j;
+    }
+}
+
